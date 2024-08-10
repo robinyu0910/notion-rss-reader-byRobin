@@ -2,7 +2,7 @@ name: Feed Cron
 
 on:
   schedule:
-    - cron: "0 * * * *" # UTC
+    - cron: "0 */2 * * *" # 每两小时一次，UTC时间
   workflow_dispatch:
 
 jobs:
